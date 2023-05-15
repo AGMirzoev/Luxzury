@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Luxzury</title>
+		<link rel="stylesheet" href="css/normalize.min.css" />
+		<link rel="stylesheet" href="css/swiper-bundle.min.css" />
+		<link rel="stylesheet" href="css/fonts.css" />
+		<link rel="stylesheet" href="css/styles.css" />
+		<link rel="stylesheet" href="css/media.css" />
+	</head>
+	<body>
+		<header class="header" id="header-section">
+			<div class="container header__container">
+				<div class="header__menu">
+					<a href="#" class="header__logo">Luxzury.</a>
+					<nav class="header__nav">
+						<ul class="header__list">
+							<li class="header__item">
+								<a href="#" class="header__link">Home</a>
+							</li>
+							<li class="header__item">
+								<a href="#" class="header__link">Services</a>
+							</li>
+							<li class="header__item">
+								<a href="#" class="header__link">Facilities</a>
+							</li>
+							<li class="header__item">
+								<a href="#" class="header__link">Info</a>
+							</li>
+						</ul>
+					</nav>
+					<button class="header__btn">Book Now</button>
+				</div>
+			</div>
+		</header>
+
+		<main class="main">
+			<section class="home" id="home-section">
+				<div class="container container__home">
+					<div class="home__banner">
+						<a href="#" class="home__link"> #1 Best Hotel In-Town</a>
+						<h1 class="home__heading">
+							The Most
+							<span class="home__heading-green">Luxurious Hotel</span>
+							In-Town!
+						</h1>
+						<p class="home__description">
+							Luxzury`s the hotel based in Wakanda, 59th street East Waka. This
+							hotel has been around since 1890 and become one of the best hotels
+							in town.
+						</p>
+						<form
+							class="home__form"
+							action="https://jsonplaceholder.typicode.com/posts"
+							autocomplete="on"
+							method="post"
+						>
+							<label class="home__label">
+								Person
+								<input type="number" name="people" class="home__info" />
+							</label>
+							<label class="home__label">
+								Check-in
+								<input type="date" name="date" class="home__info" />
+							</label>
+							<label class="home__label">
+								Check-out
+								<input type="date" name="date" class="home__info" />
+							</label>
+							<button class="home__btn">Check</button>
+						</form>
+					</div>
+				</div>
+				<div class="home__img"></div>
+			</section>
+
+			<section class="services" id="services-section">
+				<div class="container services__container">
+					<h2 class="services__caption">
+						We Provide The Best Services for Our Guests
+					</h2>
+					<div class="cards">
+						<ul class="cards__list">
+							<li class="cards__item">
+								<div class="cards__number">1</div>
+								<h3 class="cards__title">Hygienic Room</h3>
+								<p class="cards__description">
+									We do cleaning every time for the convenience of hotel guests,
+									and we have adequate cleaning facilities
+								</p>
+							</li>
+							<li class="cards__item">
+								<div class="cards__number">2</div>
+								<h3 class="cards__title">Delicious Food</h3>
+								<p class="cards__description">
+									We strive to provide the best food from the world's selected
+									chefs, as well as hygienic ingredients.
+								</p>
+							</li>
+							<li class="cards__item">
+								<div class="cards__number">3</div>
+								<h3 class="cards__title">High Security</h3>
+								<p class="cards__description">
+									Security sistem at this hotel is very guaranteed and has a
+									recognized security certificate.
+								</p>
+							</li>
+							<li class="cards__item">
+								<div class="cards__number">4</div>
+								<h3 class="cards__title">Quick Service</h3>
+								<p class="cards__description">
+									We have many qualified employees who are ready to serve you
+									whenever you need.
+								</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+			<section class="facilities" id="facilities-section">
+				<div class="container facilities__container">
+					<h2 class="facilities__caption">Our Facilities</h2>
+					<div class="facilities__button">
+						<div class="swiper-button-prev facilities__button-prev"></div>
+						<div class="swiper-button-next facilities__button-next"></div>
+					</div>
+					<div class="facilities__content">
+						<div class="facilities__tabs">
+							<ul class="tabs__list">
+								<li class="tabs__item active" data-tab="#bedroom">Bedroom</li>
+								<li class="tabs__item" data-tab="#workspace">Workspace</li>
+								<li class="tabs__item" data-tab="#meeting">Meeting Room</li>
+								<li class="tabs__item" data-tab="#restaurant">Restaurant</li>
+								<li class="tabs__item" data-tab="#swimming">Swimming Pool</li>
+								<li class="tabs__item" data-tab="#coffee">Coffee Shop</li>
+								<li class="tabs__item" data-tab="#parking">Parking Lot</li>
+							</ul>
+						</div>
+
+						<div class="facilities__sliders">
+							<!-- Facilities__Slider-1 -->
+							<div class="facilities__sliders-block show" id="bedroom">
+								<div class="swiper facilities__slider">
+									<div class="swiper-wrapper">
+										<!-- slider-1 -->
+										<div class="swiper-slide">
+											<div class="facilities__item">
+												<div
+													class="facilities__image facilities__image-1"
+												></div>
+												<div class="facilities__text">
+													<h3 class="facilities__title">Tinylux Room</h3>
+													<p class="facilities__subtitle">
+														<span class="facilities__subtitle-price">
+															$2460
+														</span>
+														per-night
+													</p>
+												</div>
+											</div>
+										</div>
+										<!-- slider-2 -->
+										<div class="swiper-slide">
+											<div class="facilities__item">
+												<div
+													class="facilities__image facilities__image-2"
+												></div>
+												<div class="facilities__text">
+													<h3 class="facilities__title">Massvelux Room</h3>
+													<p class="facilities__subtitle">
+														<span class="facilities__subtitle-price">
+															$2780
+														</span>
+														per-night
+													</p>
+												</div>
+											</div>
+										</div>
+										<!-- slider-3 -->
+										<div class="swiper-slide">
+											<div class="facilities__item">
+												<div
+													class="facilities__image facilities__image-3"
+												></div>
+												<div class="facilities__text">
+													<h3 class="facilities__title">Rassvelux Room</h3>
+													<p class="facilities__subtitle">
+														<span class="facilities__subtitle-price">
+															$2950
+														</span>
+														per-night
+													</p>
+												</div>
+											</div>
+										</div>
+										<!-- slider-4 -->
+										<div class="swiper-slide">
+											<div class="facilities__item">
+												<div
+													class="facilities__image facilities__image-4"
+												></div>
+												<div class="facilities__text">
+													<h3 class="facilities__title">Sunsetlux Room</h3>
+													<p class="facilities__subtitle">
+														<span class="facilities__subtitle-price">
+															$3010
+														</span>
+														per-night
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- Facilities__Slider-2 -->
+							<div class="facilities__sliders-block" id="workspace">
+								<div class="swiper facilities__slider">
+									<div class="swiper-wrapper">
+										<!-- slider-1 -->
+										<div class="swiper-slide">
+											<div class="facilities__item">
+												<div class="facilities__image workspace__image-1"></div>
+												<div class="facilities__text">
+													<h3 class="facilities__title">Tinylux Room</h3>
+													<p class="facilities__subtitle">
+														<span class="facilities__subtitle-price">
+															$70
+														</span>
+														per-night
+													</p>
+												</div>
+											</div>
+										</div>
+										<!-- slider-2 -->
+										<div class="swiper-slide">
+											<div class="facilities__item">
+												<div class="facilities__image workspace__image-2"></div>
+												<div class="facilities__text">
+													<h3 class="facilities__title">Massvelux Room</h3>
+													<p class="facilities__subtitle">
+														<span class="facilities__subtitle-price">
+															$110
+														</span>
+														per-night
+													</p>
+												</div>
+											</div>
+										</div>
+										<!-- slider-3 -->
+										<div class="swiper-slide">
+											<div class="facilities__item">
+												<div class="facilities__image workspace__image-3"></div>
+												<div class="facilities__text">
+													<h3 class="facilities__title">Rassvelux Room</h3>
+													<p class="facilities__subtitle">
+														<span class="facilities__subtitle-price">
+															$95
+														</span>
+														per-night
+													</p>
+												</div>
+											</div>
+										</div>
+										<!-- slider-4 -->
+										<div class="swiper-slide">
+											<div class="facilities__item">
+												<div class="facilities__image workspace__image-4"></div>
+												<div class="facilities__text">
+													<h3 class="facilities__title">Sunsetlux Room</h3>
+													<p class="facilities__subtitle">
+														<span class="facilities__subtitle-price">
+															$45
+														</span>
+														per-night
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- Facilities__Slider-3 -->
+							<div class="facilities__sliders-block" id="meeting">
+								<div class="swiper facilities__slider">
+									<div class="swiper-wrapper">
+										<!-- slider-1 -->
+										<div class="swiper-slide">
+											<div class="facilities__item">
+												<div class="facilities__image meeting__image-1"></div>
+												<div class="facilities__text">
+													<h3 class="facilities__title">Tinylux Room</h3>
+													<p class="facilities__subtitle">
+														<span class="facilities__subtitle-price">
+															$110
+														</span>
+														per-night
+													</p>
+												</div>
+											</div>
+										</div>
+										<!-- slider-2 -->
+										<div class="swiper-slide">
+											<div class="facilities__item">
+												<div class="facilities__image meeting__image-2"></div>
+												<div class="facilities__text">
+													<h3 class="facilities__title">Massvelux Room</h3>
+													<p class="facilities__subtitle">
+														<span class="facilities__subtitle-price">
+															$155
+														</span>
+														per-night
+													</p>
+												</div>
+											</div>
+										</div>
+										<!-- slider-3 -->
+										<div class="swiper-slide">
+											<div class="facilities__item">
+												<div class="facilities__image meeting__image-3"></div>
+												<div class="facilities__text">
+													<h3 class="facilities__title">Rassvelux Room</h3>
+													<p class="facilities__subtitle">
+														<span class="facilities__subtitle-price">
+															$170
+														</span>
+														per-night
+													</p>
+												</div>
+											</div>
+										</div>
+										<!-- slider-4 -->
+										<div class="swiper-slide">
+											<div class="facilities__item">
+												<div class="facilities__image meeting__image-4"></div>
+												<div class="facilities__text">
+													<h3 class="facilities__title">Sunsetlux Room</h3>
+													<p class="facilities__subtitle">
+														<span class="facilities__subtitle-price">
+															$195
+														</span>
+														per-night
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- Facilities__Slider-4 -->
+							<div class="facilities__sliders-block" id="restaurant">
+								<div class="swiper facilities__slider">
+									<div class="swiper-wrapper">
+										<!-- slider-1 -->
+										<div class="swiper-slide">
+											<div class="facilities__item">
+												<div
+													class="facilities__image restaurant__image-1"
+												></div>
+												<div class="facilities__text">
+													<h3 class="facilities__title">Tinylux Room</h3>
+													<p class="facilities__subtitle">
+														<span class="facilities__subtitle-price">
+															$950
+														</span>
+														per-night
+													</p>
+												</div>
+											</div>
+										</div>
+										<!-- slider-2 -->
+										<div class="swiper-slide">
+											<div class="facilities__item">
+												<div
+													class="facilities__image restaurant__image-2"
+												></div>
+												<div class="facilities__text">
+													<h3 class="facilities__title">Massvelux Room</h3>
+													<p class="facilities__subtitle">
+														<span class="facilities__subtitle-price">
+															$1130
+														</span>
+														per-night
+													</p>
+												</div>
+											</div>
+										</div>
+										<!-- slider-3 -->
+										<div class="swiper-slide">
+											<div class="facilities__item">
+												<div
+													class="facilities__image restaurant__image-3"
+												></div>
+												<div class="facilities__text">
+													<h3 class="facilities__title">Rassvelux Room</h3>
+													<p class="facilities__subtitle">
+														<span class="facilities__subtitle-price">
+															$1380
+														</span>
+														per-night
+													</p>
+												</div>
+											</div>
+										</div>
+										<!-- slider-4 -->
+										<div class="swiper-slide">
+											<div class="facilities__item">
+												<div
+													class="facilities__image restaurant__image-4"
+												></div>
+												<div class="facilities__text">
+													<h3 class="facilities__title">Sunsetlux Room</h3>
+													<p class="facilities__subtitle">
+														<span class="facilities__subtitle-price">
+															$1650
+														</span>
+														per-night
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- Facilities__Slider-5 -->
+							<div class="facilities__sliders-block" id="swimming">
+								<div class="swiper facilities__slider">
+									<div class="swiper-wrapper">
+										<!-- slider-1 -->
+										<div class="swiper-slide">
+											<div class="facilities__item">
+												<div class="facilities__image swimming__image-1"></div>
+												<div class="facilities__text">
+													<h3 class="facilities__title">Tinylux Room</h3>
+													<p class="facilities__subtitle">
+														<span class="facilities__subtitle-price">
+															$35
+														</span>
+														per-night
+													</p>
+												</div>
+											</div>
+										</div>
+										<!-- slider-2 -->
+										<div class="swiper-slide">
+											<div class="facilities__item">
+												<div class="facilities__image swimming__image-2"></div>
+												<div class="facilities__text">
+													<h3 class="facilities__title">Massvelux Room</h3>
+													<p class="facilities__subtitle">
+														<span class="facilities__subtitle-price">
+															$50
+														</span>
+														per-night
+													</p>
+												</div>
+											</div>
+										</div>
+										<!-- slider-3 -->
+										<div class="swiper-slide">
+											<div class="facilities__item">
+												<div class="facilities__image swimming__image-3"></div>
+												<div class="facilities__text">
+													<h3 class="facilities__title">Rassvelux Room</h3>
+													<p class="facilities__subtitle">
+														<span class="facilities__subtitle-price">
+															$75
+														</span>
+														per-night
+													</p>
+												</div>
+											</div>
+										</div>
+										<!-- slider-4 -->
+										<div class="swiper-slide">
+											<div class="facilities__item">
+												<div class="facilities__image swimming__image-4"></div>
+												<div class="facilities__text">
+													<h3 class="facilities__title">Sunsetlux Room</h3>
+													<p class="facilities__subtitle">
+														<span class="facilities__subtitle-price">
+															$85
+														</span>
+														per-night
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- Facilities__Slider-6 -->
+							<div class="facilities__sliders-block" id="coffee">
+								<div class="swiper facilities__slider">
+									<div class="swiper-wrapper">
+										<!-- slider-1 -->
+										<div class="swiper-slide">
+											<div class="facilities__item">
+												<div class="facilities__image coffee__image-1"></div>
+												<div class="facilities__text">
+													<h3 class="facilities__title">Tinylux Room</h3>
+													<p class="facilities__subtitle">
+														<span class="facilities__subtitle-price">
+															$20
+														</span>
+														per-night
+													</p>
+												</div>
+											</div>
+										</div>
+										<!-- slider-2 -->
+										<div class="swiper-slide">
+											<div class="facilities__item">
+												<div class="facilities__image coffee__image-2"></div>
+												<div class="facilities__text">
+													<h3 class="facilities__title">Massvelux Room</h3>
+													<p class="facilities__subtitle">
+														<span class="facilities__subtitle-price">
+															$35
+														</span>
+														per-night
+													</p>
+												</div>
+											</div>
+										</div>
+										<!-- slider-3 -->
+										<div class="swiper-slide">
+											<div class="facilities__item">
+												<div class="facilities__image coffee__image-3"></div>
+												<div class="facilities__text">
+													<h3 class="facilities__title">Rassvelux Room</h3>
+													<p class="facilities__subtitle">
+														<span class="facilities__subtitle-price">
+															$45
+														</span>
+														per-night
+													</p>
+												</div>
+											</div>
+										</div>
+										<!-- slider-4 -->
+										<div class="swiper-slide">
+											<div class="facilities__item">
+												<div class="facilities__image coffee__image-4"></div>
+												<div class="facilities__text">
+													<h3 class="facilities__title">Sunsetlux Room</h3>
+													<p class="facilities__subtitle">
+														<span class="facilities__subtitle-price">
+															$65
+														</span>
+														per-night
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- Facilities__Slider-7 -->
+							<div class="facilities__sliders-block" id="parking">
+								<div class="swiper facilities__slider">
+									<div class="swiper-wrapper">
+										<!-- slider-1 -->
+										<div class="swiper-slide">
+											<div class="facilities__item">
+												<div class="facilities__image parking__image-1"></div>
+												<div class="facilities__text">
+													<h3 class="facilities__title">Tinylux Room</h3>
+													<p class="facilities__subtitle">
+														<span class="facilities__subtitle-price">
+															$25
+														</span>
+														per-night
+													</p>
+												</div>
+											</div>
+										</div>
+										<!-- slider-2 -->
+										<div class="swiper-slide">
+											<div class="facilities__item">
+												<div class="facilities__image parking__image-2"></div>
+												<div class="facilities__text">
+													<h3 class="facilities__title">Massvelux Room</h3>
+													<p class="facilities__subtitle">
+														<span class="facilities__subtitle-price">
+															$45
+														</span>
+														per-night
+													</p>
+												</div>
+											</div>
+										</div>
+										<!-- slider-3 -->
+										<div class="swiper-slide">
+											<div class="facilities__item">
+												<div class="facilities__image parking__image-3"></div>
+												<div class="facilities__text">
+													<h3 class="facilities__title">Rassvelux Room</h3>
+													<p class="facilities__subtitle">
+														<span class="facilities__subtitle-price">
+															$60
+														</span>
+														per-night
+													</p>
+												</div>
+											</div>
+										</div>
+										<!-- slider-4 -->
+										<div class="swiper-slide">
+											<div class="facilities__item">
+												<div class="facilities__image parking__image-4"></div>
+												<div class="facilities__text">
+													<h3 class="facilities__title">Sunsetlux Room</h3>
+													<p class="facilities__subtitle">
+														<span class="facilities__subtitle-price">
+															$85
+														</span>
+														per-night
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="reviews" id="reviews-section">
+				<div class="container reviews__container">
+					<h2 class="reviews__caption">See What Our Guest Say</h2>
+					<div class="reviews__button">
+						<div class="swiper-button-prev reviews__button-prev"></div>
+						<div class="swiper-button-next reviews__button-next"></div>
+					</div>
+					<div class="swiper reviews__swiper">
+						<div class="swiper-wrapper reviews__swiper-wrapper">
+							<!-- Slider-1 -->
+							<div class="swiper-slide reviews__swiper-slide">
+								<div class="reviews__item">
+									<div class="reviews__image reviews__img-1"></div>
+									<div class="reviews__text">
+										<span class="reviews__quotation-mark">“</span>
+										<h3 class="reviews__title">
+											This place was incredible, and services of the hotel was
+											great. Thanks!
+										</h3>
+										<h4 class="reviews__name">Elizabeth</h4>
+										<p class="reviews__traveller">Traveller</p>
+									</div>
+								</div>
+							</div>
+							<!-- Slider-2 -->
+							<div class="swiper-slide reviews__swiper-slide">
+								<div class="reviews__item">
+									<div class="reviews__image reviews__img-2"></div>
+									<div class="reviews__text">
+										<span class="reviews__quotation-mark">“</span>
+										<h3 class="reviews__title">
+											It was nice like a family home, nice breakfast and
+											facilities!
+										</h3>
+										<h4 class="reviews__name">Leonardo</h4>
+										<p class="reviews__traveller">Traveller</p>
+									</div>
+								</div>
+							</div>
+							<!-- Slider-3 -->
+							<div class="swiper-slide reviews__swiper-slide">
+								<div class="reviews__item">
+									<div class="reviews__image reviews__img-3"></div>
+									<div class="reviews__text">
+										<span class="reviews__quotation-mark">“</span>
+										<h3 class="reviews__title">
+											The hotel is very clean and luxury. We take a suite, so
+											there is a lot of space and new forniture. Thanks!
+										</h3>
+										<h4 class="reviews__name">David</h4>
+										<p class="reviews__traveller">Traveller</p>
+									</div>
+								</div>
+							</div>
+							<!-- Slider-4 -->
+							<div class="swiper-slide reviews__swiper-slide">
+								<div class="reviews__item">
+									<div class="reviews__image reviews__img-4"></div>
+									<div class="reviews__text">
+										<span class="reviews__quotation-mark">“</span>
+										<h3 class="reviews__title">
+											This place was incredible, and services of the hotel was
+											great. Thanks!
+										</h3>
+										<h4 class="reviews__name">Michelle and Michael</h4>
+										<p class="reviews__traveller">Traveller</p>
+									</div>
+								</div>
+							</div>
+							<!-- Slider-5 -->
+							<div class="swiper-slide reviews__swiper-slide">
+								<div class="reviews__item">
+									<div class="reviews__image reviews__img-5"></div>
+									<div class="reviews__text">
+										<span class="reviews__quotation-mark">“</span>
+										<h3 class="reviews__title">
+											Comfortable beds, quiet. Good location close to ski /
+											mountain and to city center.
+										</h3>
+										<h4 class="reviews__name">Britney</h4>
+										<p class="reviews__traveller">Traveller</p>
+									</div>
+								</div>
+							</div>
+							<!-- Slider-6 -->
+							<div class="swiper-slide reviews__swiper-slide">
+								<div class="reviews__item">
+									<div class="reviews__image reviews__img-6"></div>
+									<div class="reviews__text">
+										<span class="reviews__quotation-mark">“</span>
+										<h3 class="reviews__title">
+											This place was incredible, and services of the hotel was
+											great. Thanks!
+										</h3>
+										<h4 class="reviews__name">Rachel</h4>
+										<p class="reviews__traveller">Traveller</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer class="footer" id="footer-section">
+			<section class="special-offer">
+				<div class="container special-offer__container">
+					<h2 class="special-offer__caption">
+						Subscribe to <br />
+						Get Special Offer!
+					</h2>
+					<p class="special-offer__description">
+						Don`t miss this oportunity! Subscribe now to get the special offer
+						and awesome newsletter!
+					</p>
+					<form
+						class="special-offer__form"
+						action="https://jsonplaceholder.typicode.com/posts"
+						autocomplete="on"
+						method="post"
+					>
+						<label class="special-offer__label">
+							<input
+								type="email"
+								placeholder="Drop your email address"
+								class="special-offer__email"
+							/>
+						</label>
+						<button class="special-offer__btn">SUBSCRIBE</button>
+					</form>
+				</div>
+			</section>
+			<section class="info">
+				<div class="container info__container">
+					<a href="tel:00823424" class="info__link">00823424</a>
+					<a href="mailto:info@luxzury.id" class="info__link">
+						info@luxzury.id
+					</a>
+					<a href="#" class="info__link">www.luxzury.com</a>
+				</div>
+			</section>
+		</footer>
+		<script src="./js/swiper-bundle.min.js"></script>
+		<script src="./js/scripts.js"></script>
+	</body>
+</html>
